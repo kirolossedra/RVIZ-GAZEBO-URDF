@@ -38,6 +38,6 @@ These equations represent the inertia matrices for a solid sphere, rectangular b
 
 | Equation | Description |
 |----------|-------------|
-| <!-- $$E = mc^2$$ --> | Energy-mass equivalence |
-| <!-- $$a^2 + b^2 = c^2$$ --> | Pythagorean theorem |
+| $$E = mc^2$$  | Energy-mass equivalence |
+| $$a^2 + b^2 = c^2$$ | Pythagorean theorem |
 
