@@ -57,7 +57,7 @@ These equations represent the inertia matrices for a solid sphere, rectangular b
       <td> 
         
 ```math 
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) 
+\(\frac{2}{5} m r^2 \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}\) 
 ```
 </td>
       <td>\(m\): Mass of the sphere, \(r\): Radius of the sphere</td>
