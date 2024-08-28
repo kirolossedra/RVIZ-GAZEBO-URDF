@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<robot name="sedrawy" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+
+
+ <!-- MACRO/CONSTANTS SECTION START -->
+
+    <xacro:include filename="common.xacro" />
+
+    <xacro:property name="b_length" value="0.6" />
+
+    <xacro:macro name="wheel_link" params="prefix">
+        <link name="${prefix}_wheel_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.08" length="0.02" />
+                </geometry>
+                <origin xyz="0 0 0" rpy="${pi/2.0} 0 0" />
+                <material name="black" />
+            </visual>
+
+
+<inertial>
+    <mass value="1.0"/>
+    <inertia ixx="0.001633" ixy="0.0" ixz="0.0"
+             iyy="0.001633" iyz="0.0"
+             izz="0.0032"/>
+  </inertial>
+
+
+<collision>
+    <geometry>
+      <cylinder radius="0.08" length="0.02"/>
+    </geometry>
+     <origin xyz="0 0 0" rpy="${pi/2.0} 0 0" />
+  </collision>
+
+        </link>
+    </xacro:macro> <!-- Correct closing of the macro tag -->
+
+
+
+
+
+<!-- Sphere Inertia Macro -->
+<xacro:macro name="sphere_inertia" params="mass radius">
+  <!-- Moment of inertia for a solid sphere: I = 2/5 * m * r^2 -->
+  <xacro:property name="sphere_inertia_value" value="${(2/5) * mass * radius * radius}" />
+
+  <inertial>
+    <mass value="${mass}"/>
+    <inertia ixx="${sphere_inertia_value}" ixy="0.0" ixz="0.0"
+             iyy="${sphere_inertia_value}" iyz="0.0"
+             izz="${sphere_inertia_value}"/>
+  </inertial>
+</xacro:macro>
+
+
+<!-- Box Inertia Macro -->
+<xacro:macro name="box_inertia" params="mass x y z">
+  <!-- Moment of inertia for a box: Ixx = m/12 * (y^2 + z^2), Iyy = m/12 * (x^2 + z^2), Izz = m/12 * (x^2 + y^2) -->
+  <xacro:property name="box_ixx" value="${(mass / 12.0) * (y * y + z * z)}" />
+  <xacro:property name="box_iyy" value="${(mass / 12.0) * (x * x + z * z)}" />
+  <xacro:property name="box_izz" value="${(mass / 12.0) * (x * x + y * y)}" />
+
+  <inertial>
+    <mass value="${mass}"/>
+    <inertia ixx="${box_ixx}" ixy="0.0" ixz="0.0"
+             iyy="${box_iyy}" iyz="0.0"
+             izz="${box_izz}"/>
+  </inertial>
+</xacro:macro>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- MACRO/CONSTANTS SECTION END -->
+
+    <xacro:wheel_link prefix="right" />
+    <xacro:wheel_link prefix="left" />
+
+    <link name="base_link">
+        <!-- Base link content can go here -->
+    </link>
+    
+    <link name="second_link">
+        <visual>
+            <geometry>
+                <box size="${b_length} 0.4 0.2" />
+            </geometry>
+            <origin xyz="0 0 0.1" rpy="0 0 0" />
+            <material name="grey" />
+        </visual>
+
+
+            <collision>
+    <geometry>
+      <box size="0.6 0.4 0.2"/>
+
+    </geometry>
+     <origin xyz="0 0 0.1" rpy="0 0 0" />
+  </collision>
+
+        <xacro:box_inertia mass="1.0" x="0.6" y="0.4" z="0.2"/>
+    </link>
+
+      <!-- Define the link (the sphere itself) -->
+  <link name="sphere_link">
+    
+    <!-- Visual representation of the sphere -->
+    <visual>
+      <geometry>
+        <sphere radius="0.04"/> <!-- Sphere with a radius of 0.04 meters -->
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    
+    <!-- Collision properties of the sphere -->
+    <collision>
+      <geometry>
+        <sphere radius="0.04"/> <!-- Same radius as visual -->
+      </geometry>
+    </collision>
+    
+   <xacro:sphere_inertia mass="1.0" radius="0.04"/>
+
+
+  </link>
+
+
+   <!-- Define the joint connecting the sphere to the world (fixed) -->
+  <joint name="fixed_joint" type="fixed">
+    <parent link="second_link"/>
+    <child link="sphere_link"/>
+    <origin xyz="0.3 0 -0.04" rpy="0 0 0"/>
+  </joint>
+
+    <joint name="base_second" type="fixed">
+        <parent link="base_link" />
+        <child link="second_link" />
+        <origin xyz="0 0 0.08" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="base_rwheel" type="continuous">
+        <parent link="second_link" />
+        <child link="right_wheel_link" />
+        <origin xyz="-0.15 0.21 0.0" rpy="0 0 0"/>
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="base_lwheel" type="continuous">
+        <parent link="second_link" />
+        <child link="left_wheel_link" />
+        <origin xyz="-0.15 -0.21 0.0" rpy="0 0 0"/>
+        <axis xyz="0 1 0" />
+    </joint>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<gazebo>
+  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+    <!-- Update rate -->
+    <updateRate>50</updateRate>
+    <!-- wheel separation and diameter -->
+    <left_joint>base_lwheel</left_joint>
+    <right_joint>base_lwheel</right_joint>
+    <wheel_separation>0.6</wheel_separation>
+    <wheel_diameter>0.15</wheel_diameter>
+    <!-- odometry -->
+    <publish_odom>true</publish_odom>
+    <odometry_topic>/odom</odometry_topic>
+    <odometry_frame>odom</odometry_frame>
+    <robot_base_frame>base_link</robot_base_frame>
+  </plugin>
+</gazebo>
+
+
+
+
+
+
+</robot>

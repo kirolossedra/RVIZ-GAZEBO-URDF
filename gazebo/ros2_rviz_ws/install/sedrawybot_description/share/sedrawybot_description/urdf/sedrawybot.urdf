@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<robot name="sedrawy">
+    
+
+    <material name="green">
+        <color rgba="0.1 0.5 0 1"/>
+    </material>
+
+    <material name="grey">
+        <color rgba="0.5 0.5 0.5 1"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+
+
+    <link name="base_link">
+        
+    </link>
+    
+    <link name="second_link">
+        <visual>
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <origin xyz="0 0 0.1" rpy="0 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+    
+    
+    <link name="rwheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.08" length="0.02" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <material name="black" />
+        </visual>
+    </link>
+    
+
+    <joint name="base_second" type="fixed">
+        <parent link="base_link" />
+        <child link="second_link" />
+        <origin xyz="0 0 0.08" rpy="0 0 0"/>
+    </joint>
+    
+    
+    <joint name="base_rwheel" type="continuous">
+        <parent link="second_link" />
+        <child link="rwheel_link" />
+        <origin xyz="0 0.21 0.0" rpy="0 0 0"/>
+        <axis xyz="0 1 0" />
+    </joint>
+    
+</robot>

@@ -1,0 +1,9 @@
+/home/kiro/ros2_rviz_ws/build/sedrawybot_description/CMakeFiles/uninstall.dir
+/home/kiro/ros2_rviz_ws/build/sedrawybot_description/CMakeFiles/sedrawybot_description_uninstall.dir
+/home/kiro/ros2_rviz_ws/build/sedrawybot_description/CMakeFiles/test.dir
+/home/kiro/ros2_rviz_ws/build/sedrawybot_description/CMakeFiles/edit_cache.dir
+/home/kiro/ros2_rviz_ws/build/sedrawybot_description/CMakeFiles/rebuild_cache.dir
+/home/kiro/ros2_rviz_ws/build/sedrawybot_description/CMakeFiles/list_install_components.dir
+/home/kiro/ros2_rviz_ws/build/sedrawybot_description/CMakeFiles/install.dir
+/home/kiro/ros2_rviz_ws/build/sedrawybot_description/CMakeFiles/install/local.dir
+/home/kiro/ros2_rviz_ws/build/sedrawybot_description/CMakeFiles/install/strip.dir

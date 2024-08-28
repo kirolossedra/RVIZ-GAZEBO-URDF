@@ -1,0 +1,30 @@
+[0.017s] Invoking command in '/home/kiro/ros2_rviz_ws/build/sedrawybot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kiro/ros2_rviz_ws/build/sedrawybot_description -- -j22 -l22
+[0.060s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.173s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.239s] -- Configuring done
+[0.246s] -- Generating done
+[0.246s] -- Build files have been written to: /home/kiro/ros2_rviz_ws/build/sedrawybot_description
+[0.268s] Invoked command in '/home/kiro/ros2_rviz_ws/build/sedrawybot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kiro/ros2_rviz_ws/build/sedrawybot_description -- -j22 -l22
+[0.296s] Invoking command in '/home/kiro/ros2_rviz_ws/build/sedrawybot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kiro/ros2_rviz_ws/build/sedrawybot_description
+[0.302s] -- Install configuration: ""
+[0.302s] -- Execute custom install script
+[0.304s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description//urdf/common.xacro
+[0.304s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description//urdf/sedrawybot.urdf.xacro
+[0.304s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description//launch/display.launch.xml
+[0.304s] -- Symlinking: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description//config/sedrawy_config.rviz
+[0.310s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/ament_index/resource_index/package_run_dependencies/sedrawybot_description
+[0.312s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/ament_index/resource_index/parent_prefix_path/sedrawybot_description
+[0.313s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/environment/ament_prefix_path.sh
+[0.313s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/environment/ament_prefix_path.dsv
+[0.313s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/environment/path.sh
+[0.313s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/environment/path.dsv
+[0.313s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/local_setup.bash
+[0.313s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/local_setup.sh
+[0.313s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/local_setup.zsh
+[0.313s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/local_setup.dsv
+[0.314s] -- Symlinking: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/package.dsv
+[0.321s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/ament_index/resource_index/packages/sedrawybot_description
+[0.321s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/cmake/sedrawybot_descriptionConfig.cmake
+[0.321s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/cmake/sedrawybot_descriptionConfig-version.cmake
+[0.321s] -- Up-to-date symlink: /home/kiro/ros2_rviz_ws/install/sedrawybot_description/share/sedrawybot_description/package.xml
+[0.322s] Invoked command in '/home/kiro/ros2_rviz_ws/build/sedrawybot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kiro/ros2_rviz_ws/build/sedrawybot_description
