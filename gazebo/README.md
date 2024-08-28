@@ -54,15 +54,13 @@ These equations represent the inertia matrices for a solid sphere, rectangular b
   <tbody>
     <tr>
       <td><strong>Solid Sphere</strong></td>
-      <td>
-        ```math
-        \(\frac{2}{5} m r^2 \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}\)
-        ```
-        
-        
-      </td>
-
-      
+      <td>$$
+\mathbf{I} = \frac{2}{5} m r^2 \begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+$$</td>
       <td>\(m\): Mass of the sphere, \(r\): Radius of the sphere</td>
     </tr>
     <tr>
@@ -77,5 +75,3 @@ These equations represent the inertia matrices for a solid sphere, rectangular b
     </tr>
   </tbody>
 </table>
-
-
