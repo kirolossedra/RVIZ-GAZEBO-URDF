@@ -79,7 +79,7 @@ These equations represent the inertia matrices for a solid sphere, rectangular b
         
         
   ```math
-  \begin{bmatrix} \frac{1}{12} m (h^2 + d^2) & 0 & 0 \\ 0 & \frac{1}{12} m (w^2 + h^2)a^2 + c^2 & 0 \\ 0 & 0 & \frac{1}{12} m (w^2 + d^2) \end{bmatrix}\
+  \begin{bmatrix} \frac{1}{12} m (3r^2 + h^2) & 0 & 0 \\ 0 & \frac{1}{12} m (3r^2 + h^2) + c^2 & 0 \\ 0 & 0 & \frac{1}{12} m r^2 \end{bmatrix}\
  ```
 
 </td>
