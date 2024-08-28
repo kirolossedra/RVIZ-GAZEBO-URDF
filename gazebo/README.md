@@ -48,3 +48,8 @@
     </tr>
   </tbody>
 </table>
+
+
+# Second: Creating a launch file to launch gazebo/+ our robot
+
+# Third: Publishing to cmd/vel to move the robot
