@@ -1,4 +1,4 @@
-
+# First: Creating Inertias
 
 ### 1. **Inertia Matrix for a Sphere**
 For a solid sphere of mass \(m\) and radius \(r\), the inertia matrix is:
