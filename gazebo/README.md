@@ -41,7 +41,7 @@ These equations represent the inertia matrices for a solid sphere, rectangular b
 | $$E = mc^2$$  | Energy-mass equivalence |
 | $$a^2 + b^2 = c^2$$ | Pythagorean theorem |
 
-```math
+
 
 <table>
   <thead>
@@ -56,13 +56,10 @@ These equations represent the inertia matrices for a solid sphere, rectangular b
       <td><strong>Solid Sphere</strong></td>
       <td> 
         
-
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-
-
-
-
-      </td>
+```math 
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) 
+```
+</td>
       <td>\(m\): Mass of the sphere, \(r\): Radius of the sphere</td>
     </tr>
     <tr>
@@ -78,4 +75,4 @@ These equations represent the inertia matrices for a solid sphere, rectangular b
   </tbody>
 </table>
 
-```
+
