@@ -43,11 +43,31 @@ These equations represent the inertia matrices for a solid sphere, rectangular b
 
 
 
-You're right! Here’s the table with LaTeX formatting for the variables:
+<table>
+  <thead>
+    <tr>
+      <th>Shape</th>
+      <th>Inertia Matrix</th>
+      <th>Variables</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Solid Sphere</strong></td>
+      <td>\(\frac{2}{5} m r^2 \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}\)</td>
+      <td>\(m\): Mass of the sphere, \(r\): Radius of the sphere</td>
+    </tr>
+    <tr>
+      <td><strong>Rectangular Box</strong></td>
+      <td>\(\frac{m}{12} \begin{bmatrix} b^2 + c^2 & 0 & 0 \\ 0 & a^2 + c^2 & 0 \\ 0 & 0 & a^2 + b^2 \end{bmatrix}\)</td>
+      <td>\(m\): Mass of the box, \(a\): Length along \(x\)-axis, \(b\): Width along \(y\)-axis, \(c\): Height along \(z\)-axis</td>
+    </tr>
+    <tr>
+      <td><strong>Solid Cylinder</strong></td>
+      <td>\(\frac{m}{12} \begin{bmatrix} 3r^2 + h^2 & 0 & 0 \\ 0 & 3r^2 + h^2 & 0 \\ 0 & 0 & 6r^2 \end{bmatrix}\)</td>
+      <td>\(m\): Mass of the cylinder, \(r\): Radius of the base, \(h\): Height of the cylinder</td>
+    </tr>
+  </tbody>
+</table>
 
-| Shape            | Inertia Matrix                                                                                  | Variables                                           |
-|------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| **Solid Sphere** |$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$| \(m\): Mass of the sphere, \(r\): Radius of the sphere |
-| **Rectangular Box** | \(\frac{m}{12} \begin{bmatrix} b^2 + c^2 & 0 & 0 \\ 0 & a^2 + c^2 & 0 \\ 0 & 0 & a^2 + b^2 \end{bmatrix}\) | \(m\): Mass of the box, \(a\): Length along \(x\)-axis, \(b\): Width along \(y\)-axis, \(c\): Height along \(z\)-axis |
-| **Solid Cylinder** | \(\frac{m}{12} \begin{bmatrix} 3r^2 + h^2 & 0 & 0 \\ 0 & 3r^2 + h^2 & 0 \\ 0 & 0 & 6r^2 \end{bmatrix}\)   | \(m\): Mass of the cylinder, \(r\): Radius of the base, \(h\): Height of the cylinder |
 
