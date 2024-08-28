@@ -8,7 +8,7 @@
   <thead>
     <tr>
       <th>Shape</th>
-      <th>Inertia Matrix</th>
+      <th>Moment of Inertia Tensor</th>
       <th>Variables</th>
     </tr>
   </thead>
