@@ -68,7 +68,18 @@ These equations represent the inertia matrices for a solid sphere, rectangular b
     </tr>
     <tr>
       <td><strong>Rectangular Box</strong></td>
-      <td>\(\frac{m}{12} \begin{bmatrix} b^2 + c^2 & 0 & 0 \\ 0 & a^2 + c^2 & 0 \\ 0 & 0 & a^2 + b^2 \end{bmatrix}\)</td>
+      <td>
+        
+        
+        \(\frac{m}{12} \begin{bmatrix} b^2 + c^2 & 0 & 0 \\ 0 & a^2 + c^2 & 0 \\ 0 & 0 & a^2 + b^2 \end{bmatrix}\)
+        
+        
+        
+        
+        
+        
+        
+</td>
       <td>\(m\): Mass of the box, \(a\): Length along \(x\)-axis, \(b\): Width along \(y\)-axis, \(c\): Height along \(z\)-axis</td>
     </tr>
     <tr>
