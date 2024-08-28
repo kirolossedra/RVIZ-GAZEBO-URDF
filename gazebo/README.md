@@ -47,11 +47,7 @@ You're right! Here’s the table with LaTeX formatting for the variables:
 
 | Shape            | Inertia Matrix                                                                                  | Variables                                           |
 |------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| **Solid Sphere** |
-```math
-\begin{bmatrix} 1 & 0 & 0  \end{bmatrix}\
-```
-$$        | \(m\): Mass of the sphere, \(r\): Radius of the sphere |
+| **Solid Sphere** |```math\begin{bmatrix} 1 & 0 & 0  \end{bmatrix}\```| \(m\): Mass of the sphere, \(r\): Radius of the sphere |
 | **Rectangular Box** | \(\frac{m}{12} \begin{bmatrix} b^2 + c^2 & 0 & 0 \\ 0 & a^2 + c^2 & 0 \\ 0 & 0 & a^2 + b^2 \end{bmatrix}\) | \(m\): Mass of the box, \(a\): Length along \(x\)-axis, \(b\): Width along \(y\)-axis, \(c\): Height along \(z\)-axis |
 | **Solid Cylinder** | \(\frac{m}{12} \begin{bmatrix} 3r^2 + h^2 & 0 & 0 \\ 0 & 3r^2 + h^2 & 0 \\ 0 & 0 & 6r^2 \end{bmatrix}\)   | \(m\): Mass of the cylinder, \(r\): Radius of the base, \(h\): Height of the cylinder |
 
