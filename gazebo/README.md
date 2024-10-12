@@ -40,7 +40,7 @@
         
         
   ```math
-  \begin{bmatrix} \frac{1}{12} m (3r^2 + h^2) & 0 & 0 \\ 0 & \frac{1}{12} m (3r^2 + h^2)  & 0 \\ 0 & 0 & \frac{1}{12} m r^2 \end{bmatrix}\
+  \begin{bmatrix} \frac{1}{12} m (3r^2 + h^2) & 0 & 0 \\ 0 & \frac{1}{12} m (3r^2 + h^2)  & 0 \\ 0 & 0 & \frac{1}{12} m r^2 \end{bmatrix}
  ```
 
 </td>
