@@ -29,7 +29,7 @@
         
 ```math
   \begin{bmatrix} \frac{1}{12} m (h^2 + d^2) & 0 & 0 \\ 0 & \frac{1}{12} m (w^2 + h^2) & 0 \\ 0 & 0 & \frac{1}{12} m (w^2 + d^2) \end{bmatrix}\
- ```
+```
   </td>
       <td>\(m\): Mass of the box, \(a\): Length along \(x\)-axis, \(b\): Width along \(y\)-axis, \(c\): Height along \(z\)-axis</td>
     </tr>
