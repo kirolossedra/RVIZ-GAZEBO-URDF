@@ -18,7 +18,7 @@
       <td>
         
 ```math
- \begin{bmatrix} \frac{2}{5} m r^2 & 0 & 0 \\ 0 & \frac{2}{5} m r^2 & 0 \\ 0 & 0 & \frac{2}{5} m r^2 \end{bmatrix}
+ P(t_i | t_{i-1}) = \frac{C(t_{i-1}, t_i) + \varepsilon}{\sum_{j=1}^{N} C(t_{i-1}, t_j) + N \cdot \varepsilon}
  ```
  </td>
       <td>\(m\): Mass of the sphere, \(r\): Radius of the sphere</td>
